@@ -1,4 +1,4 @@
-# 📦 Products Database — SQL Learning Guide
+# 📦 Products Database — SQL Learning
 
 ## 🔧 Create Table
 
