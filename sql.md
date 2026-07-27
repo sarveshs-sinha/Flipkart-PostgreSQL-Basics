@@ -35,7 +35,7 @@ VALUES
 
 ---
 
-## ✏️ Basic Clause Practice Questions
+## ✏️ Basic Clause Practice Questions :--
 
 ### Q1. Show the name and price of all products.
 
