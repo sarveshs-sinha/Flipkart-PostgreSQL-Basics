@@ -1,1 +1,1 @@
-# Flipkart-PostgreSQL-Basic-
+# Flipkart-PostgreSQL-Basic
