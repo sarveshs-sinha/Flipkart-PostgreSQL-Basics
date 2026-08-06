@@ -1,4 +1,4 @@
-# 📦 Products Database — SQL Learning
+# 📦 Products Database — SQL Learning Guide
 
 ## 🔧 Create Table
 
@@ -35,7 +35,7 @@ VALUES
 
 ---
 
-## ✏️ Basic Clause Practice Questions :--
+## ✏️ Basic Clause Practice Questions
 
 ### Q1. Show the name and price of all products.
 
@@ -85,6 +85,51 @@ SELECT name AS Item_Name, price AS Item_Price FROM products;
 
 ```sql
 SELECT DISTINCT category FROM products;
+```
+
+---
+
+## 🎓 Test 2 Questions
+
+### Q1. Display the name and price of the cheapest product in the entire table.
+
+```sql
+SELECT name, price FROM products
+WHERE price = (SELECT MIN(price) FROM products);
+```
+
+### Q2. Find the average price of products that belong to 'Home & Kitchen' or 'Fitness'.
+
+```sql
+SELECT category, AVG(price) AS avg_price
+FROM products
+WHERE category IN ('Home & Kitchen', 'Fitness')
+GROUP BY category;
+```
+
+### Q3. Show product names and stock quantity where product is available, stock > 50, and price != 299.
+
+```sql
+SELECT name, stock_quantity FROM products
+WHERE is_available = TRUE
+AND stock_quantity > 50
+AND price != 299.00;
+```
+
+### Q4. Find the most expensive product in each category.
+
+```sql
+SELECT category, MAX(price) AS max_price
+FROM products
+GROUP BY category;
+```
+
+### Q5. Show all unique categories in uppercase, sorted in descending order.
+
+```sql
+SELECT DISTINCT UPPER(category) AS category_upper
+FROM products
+ORDER BY category_upper DESC;
 ```
 
 ---
