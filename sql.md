@@ -89,6 +89,7 @@ SELECT DISTINCT category FROM products;
 
 ---
 
+---
 ## 🎓 Test 2 Questions
 
 ### Q1. Display the name and price of the cheapest product in the entire table.
